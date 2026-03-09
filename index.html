@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<title>Happy Birthday Vandhana ❤️</title>
+	
+	<style>
+	.heart {
+position: fixed;
+bottom: -10px;
+font-size: 24px;
+animation: float 5s linear infinite;
+}
+
+@keyframes float {
+0% {
+transform: translateY(0);
+opacity:1;
+}
+100% {
+transform: translateY(-100vh);
+opacity:0;
+}
+}
+		body {
+			font-family: Arial;
+			text-align: center;
+			background: linear-gradient(#ff9a9e, #fad0c4);
+			color: #333;
+		}
+		
+		h1 {
+			font-size: 50px;
+			color: #d6005a;
+		}
+		
+		h2 {
+			color: #444;
+		}
+		
+		.gallery {
+			margin-top: 30px;
+		}
+		
+		.gallery img {
+			width: 220px;
+			margin: 10px;
+			border-radius: 15px;
+			box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.2);
+		}
+		
+		.message {
+			width: 70%;
+			margin: auto;
+			font-size: 20px;
+			background: white;
+			padding: 20px;
+			border-radius: 15px;
+			box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.2);
+			margin-top: 30px;
+		}
+		
+		footer {
+			margin-top: 40px;
+			font-size: 18px;
+		}
+	</style>
+	
+</head>
+
+<body>
+	
+	<h1>Happy Birthday Vandhana 🎂</h1>
+	
+	<h2>To the most Beautifull person i ever met with 🐼❤️</h2>
+	
+	<div class="gallery">
+		
+		<img src="photo1.PNG">
+		<img src="photo2.PNG">
+		<img src="photo3.PNG">
+		<img src="photo4.PNG">
+		
+	</div>
+	
+	<div class="message">
+		
+		<p>
+			Happy Birthday Vandhana 🐼 <br><br>
+			
+			I’m reaching out because I’m so sorry for my behavior and for saying I didn't want to talk.
+			It wasn't true—I was just frustrated and reacted poorly.
+			
+			I’d love to put the anger behind us and focus on making your birthday as special as you are.
+			
+			You mean a lot to me and I hope this small surprise brings a smile to your face today. ❤️
+		</p>
+		
+	</div>
+	
+	<footer>
+		Made with ❤️ by Shubam
+	</footer>
+	<script>
+	function createHeart() {
+		const heart = document.createElement("div");
+		heart.classList.add("heart");
+		heart.innerHTML = "❤️";
+		heart.style.left = Math.random() * 100 + "vw";
+		heart.style.animationDuration = Math.random() * 3 + 3 + "s";
+		
+		document.body.appendChild(heart);
+		
+		setTimeout(() => {
+			heart.remove();
+		}, 5000);
+	}
+	
+	setInterval(createHeart, 300);
+</script>
+</body>
+
+</html>
